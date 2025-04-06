@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Medication Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Medi-Reminder</h1>
+    <p>Your AI-based health companion</p>
+  </header>
+
+  <main>
+    <section class="add-med">
+      <h2>Add Medicine</h2>
+      <input type="text" id="med-name" placeholder="Medicine name" />
+      <input type="time" id="med-time" />
+      <button onclick="addMedicine()">Add Medicine</button>
+    </section>
+
+    <section class="med-list-section">
+      <h2>Medicine Schedule</h2>
+      <ul id="med-list"></ul>
+    </section>
+
+    <section class="agents">
+      <h2>Smart Health Agents</h2>
+      <button onclick="monitorHealth()">Health Monitoring Agent</button>
+      <button onclick="simulateFall()">Fall Detection Agent</button>
+      <button onclick="dailyVoiceReminder()">Daily Activity Reminder</button>
+    </section>
+
+
+    <section class="filler-section">
+      <h2>Health Tips</h2>
+      <p>🧘 Stay hydrated and maintain a balanced diet.</p>
+      <p>💤 Get enough sleep every night.</p>
+      <p>🚶 Walk 10,000 steps a day for better heart health.</p>
+      <p>💡 Regular checkups can detect issues early.</p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 SmartCare by Kanishka</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
